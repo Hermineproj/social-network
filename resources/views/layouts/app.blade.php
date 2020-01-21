@@ -126,7 +126,7 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                   <ul class="nav navbar-nav">
-                    <li class="nav-item active"><a href="{{url('/')}}">Home</a></li>
+                    <li class="nav-item active"><a href="{{route('userpage')}}">Home</a></li>
 {{--                    <li class="nav-item"><a href="">Members</a></li>--}}
                     <li><a href="{{route('friends')}}">Friends</a></li>
 {{--                    <li><a href="{{route('groups')}}">Groups</a></li>--}}

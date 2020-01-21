@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb04bd89-467f-4a1c-8503-7349c0735d54" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FriendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FriendController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UploadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/groups.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/groups.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/members.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/members.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/photos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/photos.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +155,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579521556780</updated>
       <workItem from="1579521559032" duration="7261000" />
-      <workItem from="1579596074033" duration="8042000" />
+      <workItem from="1579596074033" duration="11105000" />
     </task>
     <servers />
   </component>
@@ -177,9 +167,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579600400635" />
-    <state x="604" y="345" key="NewPhpFileDialog" timestamp="1579601789481">
+    <state x="604" y="345" key="NewPhpFileDialog" timestamp="1579607574253">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="345" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1579601789481" />
+    <state x="604" y="345" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1579607574253" />
   </component>
 </project>
