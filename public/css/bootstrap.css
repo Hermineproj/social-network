@@ -50,6 +50,10 @@ a:active,
 a:hover {
   outline: 0;
 }
+
+.li{
+color: white;
+}
 abbr[title] {
   border-bottom: 1px dotted;
 }

@@ -12,9 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/user_page', 'HomeController@user_page')->name('user_page');
+
+Route::get('/friend', 'FriendController@friend')->name('friend');
+Route::get('/group', 'HomeController@group')->name('group');
+Route::get('/photo', 'UploadController@photo')->name('photo');
+Route::get('/profile', 'ProfileController@profile')->name('profile');

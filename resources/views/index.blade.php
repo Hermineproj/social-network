@@ -1,51 +1,6 @@
 @extends('layouts.app')
 
-{{--  <!DOCTYPE html>--}}
-{{--  <html lang="en">--}}
-{{--  <head>--}}
-{{--      <meta charset="utf-8">--}}
-{{--      <meta http-equiv="X-UA-Compatible" content="IE=edge">--}}
-{{--      <meta name="viewport" content="width=device-width, initial-scale=1">--}}
 
-{{--      <title>Dobble Social Network</title>--}}
-
-{{--      <!-- Bootstrap core CSS -->--}}
-{{--      <link href="css/bootstrap.css" rel="stylesheet">--}}
-
-{{--      <!-- Custom styles for this template -->--}}
-{{--      <link href="css/style.css" rel="stylesheet">--}}
-{{--      <link href="css/font-awesome.css" rel="stylesheet">--}}
-{{--  </head>--}}
-
-{{--  <body>--}}
-
-{{--  <header>--}}
-{{--      <div class="container">--}}
-{{--          <img src="img/logo.png" class="logo" alt="">--}}
-{{--      </div>--}}
-{{--  </header>--}}
-{{--    <nav class="navbar navbar-default">--}}
-{{--      <div class="container">--}}
-{{--        <div class="navbar-header">--}}
-{{--          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">--}}
-{{--            <span class="sr-only">Toggle navigation</span>--}}
-{{--            <span class="icon-bar"></span>--}}
-{{--            <span class="icon-bar"></span>--}}
-{{--            <span class="icon-bar"></span>--}}
-{{--          </button>--}}
-{{--        </div>--}}
-{{--        <div id="navbar" class="collapse navbar-collapse">--}}
-{{--          <ul class="nav navbar-nav">--}}
-{{--            <li class="active"><a href="index.blade.php">Home</a></li>--}}
-{{--            <li><a href="members.blade.php">Members</a></li>--}}
-{{--            <li><a href="contact.html">Contact</a></li>--}}
-{{--            <li><a href="groups.blade.php">Groups</a></li>--}}
-{{--            <li><a href="photos.blade.php">Photos</a></li>--}}
-{{--            <li><a href="profile.blade.php">Profile</a></li>--}}
-{{--          </ul>--}}
-{{--        </div><!--/.nav-collapse -->--}}
-{{--      </div>--}}
-{{--    </nav>--}}
 @section('content')
     <section>
       <div class="container">
@@ -259,16 +214,3 @@
       </div>
     </section>
 @endsection
-{{--    <footer>--}}
-{{--      <div class="container">--}}
-{{--        <p>Dobble Copyright &copy, 2015</p>--}}
-{{--      </div>--}}
-{{--    </footer>--}}
-
-{{--    <!-- Bootstrap core JavaScript--}}
-{{--    ================================================== -->--}}
-{{--    <!-- Placed at the end of the document so the pages load faster -->--}}
-{{--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>--}}
-{{--    <script src="js/bootstrap.js"></script>--}}
-{{--  </body>--}}
-{{--</html>--}}
