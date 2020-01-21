@@ -24,4 +24,10 @@ Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::get('/friends', 'FriendController@index')->name('friends');
 Route::get('/photos', 'UploadController@index')->name('photos');
 
+Route::get('/user_page', 'HomeController@user_page')->name('user_page');
+
+Route::get('/friend', 'FriendController@friend')->name('friend');
+Route::get('/group', 'HomeController@group')->name('group');
+Route::get('/photo', 'UploadController@photo')->name('photo');
+Route::get('/profile', 'ProfileController@profile')->name('profile');
 
