@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('content')
-
-<section>
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -67,11 +66,6 @@
       </div>
     </section>
 
-@endsection
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script>
       $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
       event.preventDefault();
@@ -81,4 +75,4 @@
       $('[data-hover="tooltip"]').tooltip()
       })
     </script>
-
+@endsection

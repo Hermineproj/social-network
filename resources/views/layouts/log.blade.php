@@ -15,15 +15,16 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-               {{'home'}}
+                Home
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
@@ -61,7 +62,7 @@
                                 </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
+                                    @csrf
                                 </form>
                             </div>
                         </li>
@@ -70,18 +71,10 @@
             </div>
         </div>
     </nav>
-<main class="py-4">
-    @yield('content')
-</main>
 
-<footer>
-    <div class="container">
-
-    </div>
-</footer>
-
-{{--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>--}}
-{{--<script src="{{ asset('js/bootstrap.js') }}"></script>--}}
-{{--<script src="{{ asset('js/ekko-lightbox.js') }}"></script>--}}
+    <main class="py-4">
+        @yield('content')
+    </main>
+</div>
 </body>
 </html>

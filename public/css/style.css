@@ -157,3 +157,9 @@ footer{
 	padding-top: 40px;
 	}
 }
+.top li a{
+    color: #fff;
+}
+.top li a:hover{
+    color: #1b4b72;
+}

@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Network
+                   Welcome to our Social Network!
                 </div>
 
 

@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class FriendController extends Controller
 {
-    public function friend()
-    {
-       return view('friends') ;
+    public function index(){
+        return view('friends');
     }
+
 }
