@@ -105,9 +105,9 @@
                                                       </a>
 
                                                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                                          @csrf
-                                                      </form>
-                                                  </div>
+                                                      @csrf
+                                                  </form>
+              </div>
                                               </li>
                                           @endguest
                                       </ul>
@@ -131,6 +131,8 @@
 {{--                    <li><a href="{{route('groups')}}">Groups</a></li>--}}
                     <li><a href="{{route('photos')}}">Photos</a></li>
                     <li><a href="{{route('profile')}}">Profile</a></li>
+                    <li><a href="{{route('members')}}">Members</a></li>
+                    <li><a href="{{route('messages')}}">Messages</a></li>
                   </ul>
                 </div><!--/.nav-collapse -->
               </div>
