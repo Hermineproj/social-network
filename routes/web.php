@@ -19,15 +19,19 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/userpage', 'HomeController@user_page')->name('userpage');
-Route::get('/home', 'HomeController@group')->name('groups');
+//Route::get('/home', 'HomeController@group')->name('groups');
 Route::get('/profile', 'ProfileController@index')->name('profile');
-Route::get('/friends', 'FriendController@index')->name('friends');
+Route::get('/friends', 'FriendController@index')->middleware('auth')->name('friends');
 Route::get('/photos', 'UploadController@index')->name('photos');
+Route::get('/message/{id}/create', 'MessageController@create');
+Route::post('/message', 'MessageController@store');
+Route::get('/messages', 'MessageController@index')->name('messages');
+Route::get('/members', 'UserController@members')->name('members');
 
-Route::get('/user_page', 'HomeController@user_page')->name('user_page');
-
-Route::get('/friend', 'FriendController@friend')->name('friend');
-Route::get('/group', 'HomeController@group')->name('group');
-Route::get('/photo', 'UploadController@photo')->name('photo');
-Route::get('/profile', 'ProfileController@profile')->name('profile');
+//Route::get('/user_page', 'HomeController@user_page')->name('user_page');
+//
+//Route::get('/friend', 'FriendController@friend')->name('friend');
+//Route::get('/group', 'HomeController@group')->name('group');
+//Route::get('/photo', 'UploadController@photo')->name('photo');
+//Route::get('/profile', 'ProfileController@profile')->name('profile');
 

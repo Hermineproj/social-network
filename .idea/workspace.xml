@@ -3,6 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="eb04bd89-467f-4a1c-8503-7349c0735d54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Friend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Friend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FriendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FriendController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/friends.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/friends.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/members.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/members.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +125,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -151,7 +162,13 @@
       <option name="presentableId" value="Default" />
       <updated>1579521556780</updated>
       <workItem from="1579521559032" duration="7261000" />
-      <workItem from="1579596074033" duration="12771000" />
+      <workItem from="1579596074033" duration="17848000" />
+      <workItem from="1579763723670" duration="15922000" />
+      <workItem from="1579800907315" duration="2378000" />
+      <workItem from="1580056549177" duration="6553000" />
+      <workItem from="1580110461638" duration="1914000" />
+      <workItem from="1580121358093" duration="3975000" />
+      <workItem from="1580290590835" duration="3882000" />
     </task>
     <servers />
   </component>
@@ -159,17 +176,39 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="494" y="172" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1580062589889">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="494" y="172" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1580062589889" />
+    <state x="428" y="101" width="620" height="626" key="#phpunit.xml" timestamp="1579611840283">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="428" y="101" width="620" height="626" key="#phpunit.xml/0.0.1536.824@0.0.1536.824" timestamp="1579611840283" />
     <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1579600400635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579600400635" />
-    <state x="604" y="345" key="NewPhpFileDialog" timestamp="1579607574253">
+    <state x="604" y="345" key="NewPhpFileDialog" timestamp="1579781402401">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="345" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1579607574253" />
+    <state x="604" y="345" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1579781402401" />
     <state x="232" y="227" key="Vcs.Push.Dialog.v2" timestamp="1579610351074">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="232" y="227" key="Vcs.Push.Dialog.v2/0.0.1280.984@0.0.1280.984" timestamp="1579610351074" />
+    <state x="473" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1580290594816">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="473" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580290594816" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/FriendController.php</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

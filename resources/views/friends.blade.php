@@ -5,74 +5,24 @@
         <div class="row">
           <div class="col-md-8">
             <div class="members">
-              <h1 class="page-header">Members</h1>
+              <h1 class="page-header">Friends</h1>
+{{--                @foreach($user->friends() as $friend)--}}
+{{--                <h2>{{$friend}}</h2>--}}
+{{--                @endforeach--}}
               <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail" alt="">
-                  <div class="text-center">
-                    SomeUser01
+                  @foreach($friends as $friend)
+                <div class="col-md-3" >
+                    <div class="bordred-div">
+                      <img src="img/user.png" class="img-thumbnail" alt="">
+                      <div class="text-center">
+                          {{$friend->name}}
+                      </div>
+{{--                      <p><a href="#" class="btn btn-success btn-block"><i class="fa fa-users"></i> Add Friend</a></p>--}}
+                      <p><a href="message/{{$friend->id}}/create" class="btn btn-default btn-block"><i class="fa fa-envelope"></i> Send Message</a></p>
+                      <p><a href="#" class="btn btn-primary btn-block"><i class="fa fa-edit"></i> View Profile</a></p>
+                </div>
                   </div>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-success btn-block"><i class="fa fa-users"></i> Add Friend</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-default btn-block"><i class="fa fa-envelope"></i> Send Message</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-primary btn-block"><i class="fa fa-edit"></i> View Profile</a></p>
-                </div>
-              </div>
-              <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail" alt="">
-                  <div class="text-center">
-                    SomeUser01
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-success btn-block"><i class="fa fa-users"></i> Add Friend</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-default btn-block"><i class="fa fa-envelope"></i> Send Message</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-primary btn-block"><i class="fa fa-edit"></i> View Profile</a></p>
-                </div>
-              </div>
-              <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail" alt="">
-                  <div class="text-center">
-                    SomeUser02
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-success btn-block"><i class="fa fa-users"></i> Add Friend</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-default btn-block"><i class="fa fa-envelope"></i> Send Message</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-primary btn-block"><i class="fa fa-edit"></i> View Profile</a></p>
-                </div>
-              </div>
-              <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail" alt="">
-                  <div class="text-center">
-                    SomeUser03
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-success btn-block"><i class="fa fa-users"></i> Add Friend</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-default btn-block"><i class="fa fa-envelope"></i> Send Message</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-primary btn-block"><i class="fa fa-edit"></i> View Profile</a></p>
-                </div>
+                  @endforeach
               </div>
             </div>
           </div>
@@ -83,15 +33,9 @@
               </div>
               <div class="panel-body">
                 <ul>
+                    @foreach($friend as $friend)
                   <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
+                        @endforeach
                 </ul>
                 <div class="clearfix"></div>
                 <a class="btn btn-primary" href="#">View All Friends</a>
