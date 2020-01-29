@@ -21,7 +21,6 @@
     <!-- Bootstrap core CSS -->
 
 
-    <!-- Custom styles for this template -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
 {{--    <link href="{{ asset('css/ekko-lightbox.css') }}" rel="stylesheet">--}}
@@ -126,8 +125,8 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                   <ul class="nav navbar-nav">
-                    <li class="nav-item active"><a href="{{route('userpage')}}">Home</a></li>
-{{--                    <li class="nav-item"><a href="">Members</a></li>--}}
+                    <li class="nav-item"><a href="{{route('main_page')}}">Main</a></li>
+                    <li class="nav-item "><a href="{{route('userpage')}}">Home</a></li>
                     <li><a href="{{route('friends')}}">Friends</a></li>
 {{--                    <li><a href="{{route('groups')}}">Groups</a></li>--}}
                     <li><a href="{{route('photos')}}">Photos</a></li>

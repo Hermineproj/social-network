@@ -3,6 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="eb04bd89-467f-4a1c-8503-7349c0735d54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LikeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LikeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UploadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Like.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Like.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_20_130757_create_profiles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_20_130757_create_profiles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_20_130901_create_likes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_20_130901_create_likes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_20_130936_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_20_130936_create_comments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_20_131103_create_friends_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_20_131103_create_friends_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_20_131331_create_uploads_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_20_131331_create_uploads_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_20_133128_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_20_133128_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_20_134258_create_messages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_20_134258_create_messages_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/photos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/photos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +177,11 @@
       <updated>1579521556780</updated>
       <workItem from="1579521559032" duration="7261000" />
       <workItem from="1579596074033" duration="12771000" />
+      <workItem from="1579673725032" duration="24075000" />
+      <workItem from="1579760248041" duration="11583000" />
+      <workItem from="1579846033486" duration="21657000" />
+      <workItem from="1580106417061" duration="9481000" />
+      <workItem from="1580279791691" duration="4288000" />
     </task>
     <servers />
   </component>
@@ -159,6 +189,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="370" y="249" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1579846531395">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="370" y="249" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.984@0.0.1280.984" timestamp="1579846531395" />
     <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1579600400635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -171,5 +205,13 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="232" y="227" key="Vcs.Push.Dialog.v2/0.0.1280.984@0.0.1280.984" timestamp="1579610351074" />
+    <state x="347" y="318" key="com.intellij.ide.util.TipDialog" timestamp="1580279791880">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="347" y="318" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1580279791880" />
+    <state x="296" y="221" key="run.anything.popup" timestamp="1579675220298">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="296" y="221" key="run.anything.popup/0.0.1280.984@0.0.1280.984" timestamp="1579675220298" />
   </component>
 </project>

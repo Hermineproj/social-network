@@ -8,31 +8,9 @@
           <div class="col-md-8">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h3 class="panel-title">Wall</h3>
+                <h3 class="panel-title">Latest Posts</h3>
               </div>
-              <div class="panel-body">
-                <form action="{{route('create_post')}}" method="post">
-                    @csrf
-                  <div class="form-group">
-                   <p>Title</p>   <input type="text" name="title">
-                  </div>
-                      <div class="form-group">
-                          <p>Body</p>
-                    <textarea class="form-control" placeholder="Write on the wall" name="body"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-default">Submit</button>
 
-                </form>
-                  @if (count($errors) > 0)
-                      <div class="alert alert-danger">
-                          <ul>
-                              @foreach ($errors->all() as $error)
-                                  <li>{{ $error }}</li>
-                              @endforeach
-                          </ul>
-                      </div>
-                  @endif
-              </div>
             </div>
 
           @foreach($posts as $post)
@@ -40,7 +18,7 @@
               <div class="panel-body">
                  <div class="row">
                    <div class="col-sm-2">
-                     <a href="profile.blade.php" class="post-avatar thumbnail"><img src="{{ asset('/upload/img/' . $post->user->profile->image) }}" alt=""><div class="text-center">{{$user->name}}</div></a>
+                     <a href="profile.blade.php" class="post-avatar thumbnail"><img src="{{ asset('/upload/img/' . $post->user->profile->image) }}" alt=""><div class="text-center"></div></a>
                      <div class="likes text-center">{{$post->likes->count() }} Likes</div>
                    </div>
                    <div class="col-sm-10">
@@ -52,16 +30,12 @@
                        </div>
                        <div class="pointer-border"></div>
                      </div>
-
-
                        <form action="{{route('like')}}" method="post">
                            @csrf
                            <input type="hidden" name="likable_id" value="{{ $post->id }}">
                            <input type="hidden" name="likable_type" value="{{ get_class ($post) }}">
-
                            <button type="submit" class="btn btn-primary">Like</button>
                        </form>
-
                      <div class="comment-form">
 
                          <form action="{{route('create_comment')}}" class="form-inline" method="post">

@@ -15,10 +15,10 @@ class CreateUploadsTable extends Migration
     {
         Schema::create('uploads', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('user_id');
-            $table->bigInteger('post_id');
-            $table->string('name');
+            $table->unsignedBigInteger('user_id');
+            $table->string('file');
             $table->string('media_type');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

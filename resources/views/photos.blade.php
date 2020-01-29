@@ -5,13 +5,47 @@
         <div class="row">
           <div class="col-md-8">
             <h1 class="page-header">Photos</h1>
+              <div class="panel-body">
+                  @if (count($errors) > 0)
+                      <div class="alert alert-danger">
+                          <ul>
+                              @foreach ($errors->all() as $error)
+                                  <li>{{ $error }}</li>
+                              @endforeach
+                          </ul>
+                      </div>
+                  @endif
+                  <form action="{{route('upload_file')}}" method="post" enctype="multipart/form-data">
+                      @csrf
+
+                      <div class="form-group">
+                          <h4>Upload Your Files</h4>
+                          <input name="file" type="file" >
+
+                      </div>
+
+                      <button type="submit" class="btn btn-default">Upload</button>
+
+                  </form>
+
+              </div>
             <ul class="photos gallery-parent">
-              <li><a href="img/sample1.jpg" data-hover="tooltip" data-placement="top" title="image" data-gallery="mygallery" data-parent=".gallery-parent" data-title="title" data-footer="this is a footer" data-toggle="lightbox"><img src="img/sample1.jpg" class="img-thumbnail" alt=""></a></li>
-              <li><a href="img/sample2.jpg" data-hover="tooltip" data-placement="top" title="image" data-gallery="mygallery" data-parent=".gallery-parent" data-title="title" data-footer="this is a footer" data-toggle="lightbox"><img src="img/sample2.jpg" class="img-thumbnail" alt=""></a></li>
-              <li><a href="img/sample3.jpg" data-hover="tooltip" data-placement="top" title="image" data-gallery="mygallery" data-parent=".gallery-parent" data-title="title" data-footer="this is a footer" data-toggle="lightbox"><img src="img/sample3.jpg" class="img-thumbnail" alt=""></a></li>
-              <li><a href="img/sample4.jpg" data-hover="tooltip" data-placement="top" title="image" data-gallery="mygallery" data-parent=".gallery-parent" data-title="title" data-footer="this is a footer" data-toggle="lightbox"><img src="img/sample4.jpg" class="img-thumbnail" alt=""></a></li>
-              <li><a href="img/sample5.jpg" data-hover="tooltip" data-placement="top" title="image" data-gallery="mygallery" data-parent=".gallery-parent" data-title="title" data-footer="this is a footer" data-toggle="lightbox"><img src="img/sample5.jpg" class="img-thumbnail" alt=""></a></li>
-              <li><a href="img/sample6.jpg" data-hover="tooltip" data-placement="top" title="image" data-gallery="mygallery" data-parent=".gallery-parent" data-title="title" data-footer="this is a footer" data-toggle="lightbox"><img src="img/sample6.jpg" class="img-thumbnail" alt=""></a></li>
+              @foreach($user->files as $photo)
+              <li>
+                  <a href="{{ asset('./upload/img/' .$photo->file) }}" data-hover="tooltip" data-placement="top" title="image" data-gallery="mygallery" data-parent=".gallery-parent" data-title="title" data-footer="this is a footer" data-toggle="lightbox">
+                      <img src="{{ asset('./upload/img/' .$photo->file) }}" class="img-thumbnail" alt="">
+                  </a>
+                  <form action="{{route('delete_file',$photo->id)}}" method="post">
+                      @csrf
+                      @method('delete')
+                      <button class="btn btn-danger" type="submit">delete</button>
+                  </form>
+                  <form action="{{route('profile_image',$photo->id)}}" method="post">
+                      @csrf
+                      <button class="btn btn-success" type="submit">add to profile</button>
+                  </form>
+              </li>
+                @endforeach
             </ul>
           </div>
           <div class="col-md-4">

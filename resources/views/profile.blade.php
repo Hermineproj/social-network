@@ -6,22 +6,40 @@
         <div class="row">
           <div class="col-md-8">
             <div class="profile">
-              <h1 class="page-header">Douglas Walter</h1>
+              <h1 class="page-header">{{$user->name}}</h1>
               <div class="row">
                 <div class="col-md-4">
-                  <img src="img/user.png" class="img-thumbnail" alt="">
+                    @if(file_exists('./upload/img/'.$profile->image))
+                  <img src="./upload/img/{{$profile->image}}" class="img-thumbnail" alt="">
+                        @else
+                        <img src="" class="img-thumbnail" alt="">
+
+                    @endif
                 </div>
                 <div class="col-md-8">
                   <ul>
-                    <li><strong>Name:</strong>Doug Walter</li>
-                    <li><strong>Email:</strong>doug@gmail.com</li>
-                    <li><strong>City:</strong>Boston</li>
-                    <li><strong>State:</strong>Massachusetts</li>
-                    <li><strong>Gender:</strong>Male</li>
-                    <li><strong>DOB:</strong>September 16th</li>
+                    <li><strong>Name:</strong>{{$user->name}}</li>
+                    <li><strong>Email:</strong>{{$user->email}}</li>
+                    <li><strong>Country:</strong>{{$profile->country}}</li>
+                    <li><strong>Gender:</strong>{{$profile->gender}}</li>
+                    <li><strong>DOB:</strong>{{$profile->dob}}</li>
                   </ul>
                 </div>
               </div><br><br>
+                <div class="form-group">
+
+                    <form action="{{route('delete_profile_image',$profile->id)}}" method="post">
+                        @csrf
+                        @method('delete')
+                        <button class="btn btn-danger" type="submit">X</button>
+                    </form>
+                </div>
+{{--                <div class="form-group">--}}
+{{--                    <p>select profile image</p>--}}
+{{--                    <input name="image" type="file" >--}}
+
+{{--                </div>--}}
+
               <div class="row">
                 <div class="col-md-12">
                   <div class="panel panel-default">
@@ -29,19 +47,42 @@
                       <h3 class="panel-title">Profile Wall</h3>
                     </div>
                     <div class="panel-body">
-                      <form>
-                        <div class="form-group">
-                          <textarea class="form-control" placeholder="Write on the wall"></textarea>
+                        @if (count($errors) > 0)
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                       <form action="{{route('edit_profile')}}" method="post" enctype="multipart/form-data">
+                           @csrf
+                           <div class="form-group">
+                            <p>Country</p>
+                          <input class="form-control" placeholder="{{$profile->country}}" name="country" type="string" value="{{$profile->country}}">
                         </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                        <div class="pull-right">
-                          <div class="btn-toolbar">
-                            <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i>Text</button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-file-image-o"></i>Image</button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-file-video-o"></i>Video</button>
-                          </div>
+                           <div class="form-group">
+                            <p>gender</p>
+                          <input class="form-control" placeholder="{{$profile->gender}}" name="gender" type="string" value="{{$profile->gender}}">
                         </div>
-                      </form>
+                           <div class="form-group">
+                            <p>DOB</p>
+                          <input class="form-control" placeholder="{{$profile->dob}}" name="dob" type="date" value="{{$profile->dob}}">
+                          <input name="id" type="hidden" value="{{$profile->id}}">
+                        </div>
+
+                           <div class="form-group">
+                               <p>select profile image</p>
+                               <input name="image" type="file" >
+
+                           </div>
+
+
+                         <button type="submit" class="btn btn-default">Submit</button>
+
+                        </form>
+
                     </div>
                   </div>
                 </div>
