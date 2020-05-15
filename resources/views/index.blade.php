@@ -67,7 +67,7 @@
                          <form action="{{route('create_comment')}}" class="form-inline" method="post">
                            @csrf
                              <input type="hidden" name="commentable_id" value="{{ $post->id }}">
-                             <input type="hidden" name="commentable_type" value="{{ get_class ($post) }}">
+                             <input type="hidden" name="commentable_type" value="{{ get_class ($post)}}">
                              <div class="form-group">
                                 <input type="text" class="form-control" placeholder="enter comment" name="body">
                             </div>
@@ -82,7 +82,7 @@
                          <a href="#" class="comment-avatar pull-left"><img src="{{ asset('/upload/img/' . $comment->user->profile->image) }}" alt=""></a>
                          <div class="comment-text">
                            <p>{{$comment->created_at}}</p>
-                             <p>  {{$comment->body}}</p>
+                             <p> {{$comment->body}}</p>
                          </div>
                        </div>
                        <div class="clearfix"></div>

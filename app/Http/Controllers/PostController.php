@@ -18,10 +18,8 @@ class PostController extends Controller
         $post = new Post;
         $post->user_id = Auth::id();
         $post->title = $request->title;
-
         $post->body = $request->body;
         $post->save();
-
         return back();
     }
 }

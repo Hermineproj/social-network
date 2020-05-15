@@ -13,11 +13,21 @@
                             @foreach($members as $member)
                                 <div class="col-md-3" >
                                     <div class="bordred-div">
+                                        @if($member->profile->image===null)
                                         <img src="img/user.png" class="img-thumbnail" alt="">
+                                        @else
+                                         <img src="./upload/img/{{$member->profile->image}}" class="img-thumbnail" alt="" style="width:150px;height:150px">                                    @endif
                                         <div class="text-center">
                                             {{$member->name}}
+{{--                                        {{$member->accept}}--}}
                                         </div>
-                                                              <p><a href="#" class="btn btn-success btn-block"><i class="fa fa-users"></i> Add Friend</a></p>
+                                        @if(array_key_exists($member->id, $friend_list) && $friend_list[$member->id]==0 )
+                                            <p><a href="#" class="btn btn-info btn-block"><i class="fa fa-users"></i>Waiting</a></p>
+                                        @elseif(array_key_exists($member->id, $friend_list) && $friend_list[$member->id]==1)
+                                            <p><a href="{{route('remfriend', ['id'=>$member->id])}}" class="btn btn-success btn-block"><i class="fa fa-users"></i>Friend (Unfriend)</a></p>
+                                        @else
+                                        <p><a href="{{url('/members/addfriend/'.$member->id)}}" class="btn btn-danger"><i class="fa fa-users"></i> Add Friend</a></p>
+                                        @endif
 {{--                                        <p><a href="message/{{$member->id}}/create" class="btn btn-default btn-block"><i class="fa fa-envelope"></i> Send Message</a></p>--}}
 {{--                                        <p><a href="#" class="btn btn-primary btn-block"><i class="fa fa-edit"></i> View Profile</a></p>--}}
                                     </div>

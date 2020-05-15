@@ -8,20 +8,14 @@ use Illuminate\Support\Facades\Auth;
 class FriendController extends Controller
 {
     public function index(){
-        $friends=Auth::user()->friends;
+        $user=Auth::user();
+        $friends=$user->friendsOfMine()->get();
         return view('friends',['friends'=>$friends]);
     }
-    public function sendFriendRequestTo($id){
 
-    }
-
-    public function acceptFriendRequest($id){
-
-    }
-
-    public function denyFriendRequest($id){
-
-    }
+//public function friendProfile($id){
+//
+//}
 
 
 }

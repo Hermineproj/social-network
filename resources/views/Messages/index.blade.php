@@ -31,138 +31,95 @@
                         <h4>Recent</h4>
                     </div>
                     <div class="srch_bar">
-                        <div class="stylish-input-group">
-                            <input type="text" class="search-bar"  placeholder="Search" >
-                            <span class="input-group-addon">
-                <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
-                </span> </div>
                     </div>
                 </div>
                 <div class="inbox_chat">
-                    <div class="chat_list active_chat">
+{{--                  //  @if(count($messages))--}}
+                    @if($friends->count() )
+                    @foreach($friends as $friend)
+                    <div class="chat_list" data-id="{{$friend->id}}">
                         <div class="chat_people">
-                            <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                            <div class="chat_img"> <img src="/upload/img/{{$friend->profile->image}}"  class="img-circle"  width="50" height="50"> </div>
                             <div class="chat_ib">
-                                <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                                <p>Test, which is a new approach to have all solutions
-                                    astrology under one roof.</p>
+                                <h5>{{$friend->name}}<span class="chat_date"></span></h5>
                             </div>
                         </div>
                     </div>
-                    <div class="chat_list">
-                        <div class="chat_people">
-                            <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                            <div class="chat_ib">
-                                <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                                <p>Test, which is a new approach to have all solutions
-                                    astrology under one roof.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat_list">
-                        <div class="chat_people">
-                            <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                            <div class="chat_ib">
-                                <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                                <p>Test, which is a new approach to have all solutions
-                                    astrology under one roof.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat_list">
-                        <div class="chat_people">
-                            <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                            <div class="chat_ib">
-                                <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                                <p>Test, which is a new approach to have all solutions
-                                    astrology under one roof.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat_list">
-                        <div class="chat_people">
-                            <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                            <div class="chat_ib">
-                                <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                                <p>Test, which is a new approach to have all solutions
-                                    astrology under one roof.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat_list">
-                        <div class="chat_people">
-                            <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                            <div class="chat_ib">
-                                <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                                <p>Test, which is a new approach to have all solutions
-                                    astrology under one roof.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat_list">
-                        <div class="chat_people">
-                            <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                            <div class="chat_ib">
-                                <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                                <p>Test, which is a new approach to have all solutions
-                                    astrology under one roof.</p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+                    @endif
+{{--                        @endif--}}
                 </div>
             </div>
             <div class="mesgs">
                 <div class="msg_history">
-                    <div class="incoming_msg">
-                        <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                        <div class="received_msg">
-                            <div class="received_withd_msg">
-                                <p>Test which is a new approach to have all
-                                    solutions</p>
-                                <span class="time_date"> 11:01 AM    |    June 9</span></div>
-                        </div>
-                    </div>
-                    <div class="outgoing_msg">
-                        <div class="sent_msg">
-                            <p>Test which is a new approach to have all
-                                solutions</p>
-                            <span class="time_date"> 11:01 AM    |    June 9</span> </div>
-                    </div>
-                    <div class="incoming_msg">
-                        <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                        <div class="received_msg">
-                            <div class="received_withd_msg">
-                                <p>Test, which is a new approach to have</p>
-                                <span class="time_date"> 11:01 AM    |    Yesterday</span></div>
-                        </div>
-                    </div>
-                    <div class="outgoing_msg">
-                        <div class="sent_msg">
-                            <p>Apollo University, Delhi, India Test</p>
-                            <span class="time_date"> 11:01 AM    |    Today</span> </div>
-                    </div>
-                    <div class="incoming_msg">
-                        <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                        <div class="received_msg">
-                            <div class="received_withd_msg">
-                                <p>We work directly with our designers and suppliers,
-                                    and sell direct to you, which means quality, exclusive
-                                    products, at a price anyone can afford.</p>
-                                <span class="time_date"> 11:01 AM    |    Today</span></div>
-                        </div>
-                    </div>
+{{--                    @foreach($messages as $message)--}}
+{{--                        @if($message->user->name === $cuser )--}}
+{{--                            <div class="outgoing_msg">--}}
+{{--                                --}}{{--                                <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>--}}
+{{--                                <div class="sent_msg">--}}
+{{--                                    <span>Me</span>--}}
+{{--                                    <p>{{$message->body}}</p>--}}
+{{--                                    <span class="time_date"> {{date('h:i a | M d',  strtotime($message->created_at))}} </span> </div>--}}
+{{--                            </div>--}}
+{{--                        @else--}}
+{{--                            <div class="incoming_msg">--}}
+{{--                                <div class="incoming_msg_img"> <span>{{$message->user->name}}</span><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>--}}
+{{--                                <div class="received_msg">--}}
+{{--                                    <div class="received_withd_msg">--}}
+
+{{--                                        <p>{{$message->body}}</p>--}}
+{{--                                        <span class="time_date">{{date('h:i a | M d',  strtotime($message->created_at))}} </span></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        @endif--}}
+{{--                    @endforeach--}}
+
                 </div>
                 <div class="type_msg">
                     <div class="input_msg_write">
-                        <input type="text" class="write_msg" placeholder="Type a message" />
-                        <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                        <form method="post" action="{{route('messages')}}" enctype="multipart/form-data">
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+                            {{ csrf_field() }}
+                            <input type="hidden" class="form-control" id="hidid" name='receiver_id' value="">
+                        <input type="text" class="write_msg"  id="textm" name="body"  placeholder="Type a message" />
+                        <button class="msg_send_btn" type="submit" ><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
 
+{{--        <form method="post" action="/message" enctype="multipart/form-data">--}}
+{{--            @if ($errors->any())--}}
+{{--                <div class="alert alert-danger">--}}
+{{--                    <ul>--}}
+{{--                        @foreach ($errors->all() as $error)--}}
+{{--                            <li>{{ $error }}</li>--}}
+{{--                        @endforeach--}}
+{{--                    </ul>--}}
+{{--                </div>--}}
+{{--            @endif--}}
+{{--            {{ csrf_field() }}--}}
+{{--            <div class="form-group">--}}
+{{--                <label for="textm">Text</label>--}}
+{{--                <input type="hidden" class="form-control" id="hidid" name='receiver_id' value="{{$friend->id}}">--}}
+{{--                <textarea class="form-control" rows="3" id="textm" name="body" ></textarea>--}}
+{{--            </div>--}}
+{{--            <button type="submit" class="btn btn-default">Submit</button>--}}
+{{--        </form>--}}
+
 
         <p class="text-center top_spac"> Design by <a target="_blank" href="#">Sunil Rajput</a></p>
 
     </div></div>
+    <div id="log"></div>
 @endsection
+

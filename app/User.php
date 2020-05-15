@@ -42,8 +42,22 @@ class User extends Authenticatable
 
 
     public function friends()
+{
+    return $this->belongsToMany('App\User', 'friends', 'user_id', 'friend_id');
+}
+
+    function friendsOfMine()
     {
-        return $this->belongsToMany('App\User', 'friends', 'user_id', 'friend_id');
+        return $this->belongsToMany('App\User', 'friends', 'user_id', 'friend_id')
+            // if you want to rely on accepted field, then add this:
+            ->wherePivot('accept', '=', 1);
+    }
+
+    function friendOf()
+    {
+        return $this->belongsToMany('App\User', 'friends', 'friend_id', 'user_id')
+            ->wherePivot('accept', '=', 1)
+            ->withPivot('accept');
     }
 
       public function messages(){
@@ -55,14 +69,17 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Post');
     }
+
     public function profile()
     {
         return $this->hasOne('App\Profile');
     }
+
     public function files()
     {
         return $this->hasMany('App\Upload');
     }
+
     public function comments()
     {
         return $this->hasMany('App\Comment');

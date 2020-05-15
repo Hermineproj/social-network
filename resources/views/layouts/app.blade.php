@@ -133,6 +133,8 @@
                     <li><a href="{{route('profile')}}">Profile</a></li>
                     <li><a href="{{route('members')}}">Members</a></li>
                     <li><a href="{{route('messages')}}">Messages</a></li>
+                    <li><a href="{{route('groups')}}">Groups</a></li>
+                    <li><a href="{{route('friendRequests')}}">Friend Requests(<span style="color: darkred">{{$request_count}}</span>)</a></li>
                   </ul>
                 </div><!--/.nav-collapse -->
               </div>
@@ -153,5 +155,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script src="{{ asset('js/ekko-lightbox.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>

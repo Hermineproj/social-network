@@ -36,10 +36,12 @@ class HomeController extends Controller
         $posts = Post::orderBy('created_at', 'desc')->get();
         return view('main',compact('posts','user'));
     }
+
     public function user_page()
     {
         $user = Auth::user();
         $posts = Post::where('user_id',$user->id)->get();
         return view('index',compact('posts','user'));
     }
+
 }

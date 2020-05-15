@@ -7,6 +7,14 @@
           <div class="col-md-8">
             <div class="groups">
               <h1 class="page-header">Groups</h1>
+                @if (session('success'))
+                        <div class="alert  alert-success alert-dismissible fade show" role="alert">
+                            {{$success}}
+                        </div>
+                @endif
+                <div class="group-item">
+                <a href="{{route('addgroup')}}" class="btn btn-default">Create Group</a>
+                </div>
               <div class="group-item">
                 <img src="img/group.png" alt="">
                 <h4><a href="#">Sample Group One</a></h4>
@@ -51,15 +59,15 @@
               </div>
               <div class="panel-body">
                 <ul>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
-                  <li><a href="profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
+                  <li><a href="../profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
+                  <li><a href="../profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
+                  <li><a href="../profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
+                  <li><a href="../profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
+                  <li><a href="../profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
+                  <li><a href="../profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
+                  <li><a href="../profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
+                  <li><a href="../profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
+                  <li><a href="../profile.blade.php" class="thumbnail"><img src="img/user.png" alt=""></a></li>
                 </ul>
                 <div class="clearfix"></div>
                 <a class="btn btn-primary" href="#">View All Friends</a>
